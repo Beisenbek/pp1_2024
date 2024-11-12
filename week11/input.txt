@@ -1,0 +1,9 @@
+8
+cde 2
+cde 2
+abc 4
+bcd 1
+abc 2
+abc 1
+bcd 3
+cde 3
