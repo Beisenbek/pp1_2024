@@ -12,14 +12,15 @@ int main () {
   vector<int> myvector;
   myvector.push_back(1);
   myvector.push_back(1);
+  myvector.push_back(10);
+  myvector.push_back(10);
+  myvector.push_back(11);
+  myvector.push_back(11);
   myvector.push_back(1);
-  myvector.push_back(2);
-  myvector.push_back(2);
-  myvector.push_back(2);
   myvector.push_back(1);
   myvector.push_back(1);
-  myvector.push_back(1);
-  unique(myvector.begin(), myvector.end());
+  vector<int> :: iterator it = unique(myvector.begin(), myvector.end());
+  myvector.resize(distance(myvector.begin(), it));
   for_each(myvector.begin(), myvector.end(), print);
 
   return 0;
